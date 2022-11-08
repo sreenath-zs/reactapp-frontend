@@ -26,4 +26,4 @@ jobs:
            docker build . --file Dockerfile -t ${{secrets.DOCKER_USER}}/reactapplication:latest
            
     - name: docker push
-      run: docker push ${{secrets.DOCKER_USER}}/reactapp:latest
+      run: docker push ${{secrets.DOCKER_USER}}/reactapplication:latest
