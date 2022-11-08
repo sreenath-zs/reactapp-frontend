@@ -22,7 +22,7 @@ jobs:
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     - name: Build the Docker image
       run: |
-           cd react-frontend
+           cd frontend-react
            docker build . --file Dockerfile -t ${{secrets.DOCKER_USER}}/reactapp:latest
            
     - name: docker push
